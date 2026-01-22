@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsible Side <Nav></title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- sidebar -->
+ <div id="sidebar" class="sidebar">
+     <div class="toggle-btn" onelick="toggleSiderbar()">
+            
+     </div>
+
+     <ul class="nav-links">
+        <li><a href="Index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="projectinfo.html">project info</a></li>
+     </ul>
+    </div>
+    <!--Main Control-->
+    <div class="--Main-control">
+        <h1> UCG Mart</h1>
+        <p>Where shopping meets coding</p>
+
+    </div>
+    <script>
+        function toggleSiderbar() {
+            document.getElementById("sidebar").classList.toggle(active);
+        }
+    </script>
+
+
+</body>
+</html>
