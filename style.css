@@ -54,8 +54,8 @@ toggle-btn{
  }
  .nav-links a {
    color: white;
-   text-decoration: block;
-   border-radius: 2px;
+   text-decoration: none;
+   display: block;
  }
  .nav-links a:hover {
     background-color: #34344e;
