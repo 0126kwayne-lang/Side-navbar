@@ -72,12 +72,12 @@ toggle-btn{
  .nav-links a {
    color: white;
    text-decoration: black;
-   border-radius: 4px;
+   border-radius: 2px;
  }
   /* Main content */
   .main-content {
     margin-left: 60px;
-    padding: 20px;
+    padding: 20;
     transition: margin-left 0.3s ease;
   }
   .sidebar.active~ .main-content{
