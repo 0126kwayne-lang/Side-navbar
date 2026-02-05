@@ -32,23 +32,6 @@ toggle-btn{
     text-align: center;
 }
 
-/* Nav links (*hidden by default) */
-.nav-links {
-    list-style: none;
-    margin-top: 20px;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateX(-20px);
-    transition: opacity 0.3s case, transform 0.3s case;
-}
-
-/* Show nav bar links only when expanded */
-.sidebar.active .nav-links{
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(0);
-}
-
 /* Nav links (hidden by default */
 .nav-links {
     list-style: none;  
@@ -60,7 +43,7 @@ toggle-btn{
  }
  
  /* Show nav links only when expanded */
- .sidebar .active .nav-links {
+ .sidebar.active .nav-links {
     opacity: 1;
     visibility: visible;
     transform: translateX(0);
@@ -71,15 +54,19 @@ toggle-btn{
  }
  .nav-links a {
    color: white;
-   text-decoration: black;
+   text-decoration: block;
    border-radius: 2px;
+ }
+ .nav-links a:hover {
+    background-color: #34344e;
+    border-radius: 4px;
  }
   /* Main content */
   .main-content {
     margin-left: 60px;
-    padding: 20;
+    padding: 20px;
     transition: margin-left 0.3s ease;
   }
-  .sidebar.active~ .main-content{
+  .sidebar.active ~ .main-content{
     margin-left: 220px;
   }
